@@ -614,7 +614,7 @@ plot3(
   fac = "SalProfTvar",
   size.shp = 1,
   amp.shp = 1,
-  col = palN2,
+  col = pal3,
   pch = c(15, 4, 19),
   morphospace = T,
   pos.shp = "range_axes",
