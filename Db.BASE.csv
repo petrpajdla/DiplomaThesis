@@ -1,0 +1,177 @@
+Include,ID,Lokalita,Lok,Ident,Top,Side,Prof,Orig,Cult,Dat,RM,Morph,OpSeq,SalVar,SalProfVys,SalProfTvar,SalTylBok,StUpev,Half,StPrac,Pouzitelnost,Len,Wid,Hei,Mas,Note
+T,Kra0501,Kralice n. H.,Kra,1/05,T,T,T,Bur,LbK,IIa,JzH,Ad,FT,213,2,1,3,T,T,F,F,276,33,28,483.9,Šmíd2013
+F,Kra0503,Kralice n. H.,Kra,3/05,F,F,F,Bur,LbK,,vulk,Ad,Wa,NA,NA,NA,NA,F,F,F,F,46,55,38,NA,Šmíd2013
+T,Kra0504,Kralice n. H.,Kra,4/05,T,T,T,Bur,LbK,,JzH,Ad,FT,213,2,1,3,F,F,F,T,155,28.6,24,225.6,Šmíd2013
+T,Kra0506,Kralice n. H.,Kra,6/05,T,T,T,Bur,LbK,IIb,JzH,Ad,FT,313,3,1,3,T,T,F,F,195,25,30.6,289.9,Šmíd2013
+T,Kra0509,Kralice n. H.,Kra,9/05,T,T,T,Bur,LbK,IIa,JzH,Ad,FT,312,3,1,2,T,F,F,T,180,27.6,31.8,275.6,Šmíd2013
+T,Kra0515,Kralice n. H.,Kra,15/05,F,F,T,Bur,LbK,Ib/IIa,JzH,Ad,Wa,213,2,1,3,T,F,F,F,87,30.5,25.6,125.3,Šmíd2013
+T,Kra0520,Kralice n. H.,Kra,20/05,F,F,T,Bur,LbK,Ib,JzH,Ad,Wa,112,1,1,2,T,F,F,T,118,37.7,21,178.1,Šmíd2013
+T,Kra0521,Kralice n. H.,Kra,21/05,F,F,T,Bur,LbK,,JzH,Ad,Wa,210,2,1,0,F,F,F,F,132,35,29.5,287.8,Šmíd2013
+T,Kra0532,Kralice n. H.,Kra,32/05,F,F,T,Bur,LbK,IIb,JzH,Ad,FT,213,2,1,3,F,F,F,F,224,29.3,31.7,109.2,Šmíd2013
+T,Kra0524,Kralice n. H.,Kra,24/05,T,T,T,Bur,LbK,,JzH,Ad,FT,212,2,1,2,T,F,F,T,211.7,36.6,31.7,271.1,Šmíd2013
+F,Kra0527,Kralice n. H.,Kra,27/05,T,T,T,Bur,LbK,,JzH,Ax,Wa,121,1,2,1,F,F,F,T,116,60.6,30.3,271.1,Šmíd2013
+T,Kra0537,Kralice n. H.,Kra,37/05,T,T,T,Bur,LbK,,JzH,We,FT,111,1,1,1,F,F,F,T,73.1,16.7,11,27.5,Šmíd2013
+T,Kra0538,Kralice n. H.,Kra,38/05,T,T,T,Bur,LbK,,JzH,Ad,FT,213,2,1,3,F,F,F,T,138,34,30.6,298.2,Šmíd2013
+F,Kra0539,Kralice n. H.,Kra,39/05,F,F,T,Bur,LbK,,JzH,Ax,FT,111,1,1,1,T,F,F,T,81,52,13,76.7,Šmíd2013
+T,Kra0545,Kralice n. H.,Kra,45/05,T,T,T,Bur,LbK,,JzH,Ad,Wa,111,1,1,1,F,T,F,F,188,38.8,24.2,300,Šmíd2013
+T,Kra0602,Kralice n. H.,Kra,2/06,F,F,T,Bur,LbK,,JzH,Ad,Wa,213,2,1,3,F,F,F,F,100,33,30,159,Šmíd2013
+T,Kra0603,Kralice n. H.,Kra,3/06,T,T,T,Bur,LbK,,JzH,Ad,FT,313,3,1,3,F,F,T,T,121,26,31,190.8,Šmíd2013
+T,Kra0608,Kralice n. H.,Kra,7/06,T,T,T,Bur,LbK,IIb,JzH,We,Wa,213,2,1,3,F,F,F,T,83,28,30,118.9,Chybně u obr jako 8/06
+T,Kra0621,Kralice n. H.,Kra,21/06,T,T,T,Bur,LbK,IIb,JzH,Ad,FT,313,3,1,3,F,F,F,T,130,29,37,249.1,Šmíd2013
+T,Kra0623,Kralice n. H.,Kra,23/06,T,T,T,Bur,LbK,IIb,JzH,Ad,FT,313,3,1,3,T,T,F,F,204,27,35,379.7,Šmíd2013
+T,Kra0625,Kralice n. H.,Kra,25/06,F,F,T,Bur,LbK,IIb,JzH,Ad,Wa,213,2,1,3,F,F,T,F,65,30,30,86.3,Šmíd2013
+T,Kra0628,Kralice n. H.,Kra,28/06,F,F,T,Bur,LbK,IIb,JzH,Ad,Wa,213,2,1,3,F,F,F,F,60,29,32,166.4,Šmíd2013
+T,Kra0AA1,Kralice n. H.,Kra,"Sek. A, čt. A1",F,F,T,Bur,LbK,,JzH,We,FT,313,3,1,3,F,T,F,F,95,12,21,48.1,Šmíd2013
+T,Ved7412a,Vedrovice,Ved,12/74,T,T,T,Bur,LbK,Ib,JzH,Ad,FT,112,1,1,2,T,F,F,T,166,42,28,355,
+T,Ved7412b,Vedrovice,Ved,12/74,F,F,T,Bur,LbK,Ib,JzH,Ad,Wa,110,1,1,0,NA,F,T,F,114,36.5,29.1,176,13002
+T,Ved7515,Vedrovice,Ved,15/75,T,T,T,Bur,LbK,Ib,JzH,Ad,FT,211,2,1,1,F,F,F,T,253,35,30.8,555,
+F,Ved7518,Vedrovice,Ved,18/75,T,T,T,Bur,LbK,Ib,JzH,Ax,FT,NA,NA,NA,NA,T,F,F,NA,74.2,39.5,14.8,68,
+T,Ved7519,Vedrovice,Ved,19/75,T,T,T,Bur,LbK,Ib,JzH,Ad,FT,223,2,2,3,T,F,F,T,156,37,29.5,315,
+T,Ved7630,Vedrovice,Ved,30/76,T,T,T,Bur,LbK,Ib,JzH,We,FT,112,1,1,2,F,F,F,T,85,17.5,11,32,
+F,Ved7631,Vedrovice,Ved,31/76,T,T,T,Bur,LbK,,JzH,Ax,FT,NA,NA,NA,NA,F,F,F,NA,73,41.5,12.4,69,
+T,Ved7632,Vedrovice,Ved,32/76,T,T,T,Bur,LbK,,JzH,We,FT,312,3,1,2,T,F,F,T,109.4,14.6,27.2,62,
+F,Ved7636,Vedrovice,Ved,36/76,F,F,T,Bur,LbK,Ib,Zel,Ax,Bl,NA,NA,NA,NA,F,F,NA,NA,68.2,5,18.2,102,Nedobroušené ostří
+T,Ved7746,Vedrovice,Ved,46/77,T,T,T,Bur,LbK,,JzH,Ad,FT,212,2,1,2,T,F,T,T1,131,41,28.8,321,?
+T,Ved7854,Vedrovice,Ved,54/78,T,T,T,Bur,LbK,Ib,JzH,Ad,FT,211,2,1,1,T,F,F,T,177,36,27.9,393,
+T,Ved7857a,Vedrovice,Ved,57/78,T,T,T,Bur,LbK,,JzH,Ad,Wa,323,3,2,3,F,T,F,F,188,22.5,34,293,"Dvě poloviny, při výzkumu?"
+T,Ved7857b,Vedrovice,Ved,57/78,T,T,T,Bur,LbK,,JzH,Ad,Wa,313,3,1,3,T,T,F,F,136,24.4,35,190,Dvě poloviny
+T,Ved7859,Vedrovice,Ved,59/78,T,T,T,Bur,LbK,Ib,JzH,Ad,FT,213,2,1,3,F,F,F,T,159,38.8,29.4,341,
+T,Ved7869,Vedrovice,Ved,69/78,T,T,T,Bur,LbK,Ib,JzH,Ad,FT,112,1,1,2,T,F,F,T,175,41,21.7,278,
+T,Ved7971,Vedrovice,Ved,71/79,F,F,T,Bur,LbK,Ib,JzH,Ad,Wa,210,2,1,0,F,T,T,T1,92.8,36.2,25.5,152,"Waste/Repaired – opravený, přebroušený zlom"
+T,Ved7976,Vedrovice,Ved,76/79,T,T,T,Bur,LbK,,JzH,Ad,FT,212,2,1,2,T,F,F,T,145.6,29.2,26,223,
+T,Ved7977,Vedrovice,Ved,77/79,T,T,T,Bur,LbK,Ib,JzH,Ad,FT,223,2,2,3,F,F,T,T,168,35.8,28.2,316,?
+T,Ved7979,Vedrovice,Ved,79/79,T,T,T,Bur,LbK,Ib,JzH,Ad,FT,111,1,1,1,F,F,F,T,186,37.3,22.7,300,
+T,Ved8088,Vedrovice,Ved,88/80,T,T,T,Bur,LbK,,JzH,Ad,FT,312,3,1,2,T,F,F,T,163,24.5,28,242,
+T,Ved8418,Vedrovice,Ved,108/84,F,F,T,Bur,LbK,,JzH,Ad,FT,110,1,1,0,F,F,F,T1,125.1,38.4,24.2,227,
+T,Ved9009,Vedrovice,Ved,sběr09,T,T,T,Bur,LbK,,JzH,Ad,FT,312,3,1,2,F,F,F,T,135,16,17.5,79,
+T,Ved9010,Vedrovice,Ved,sběr10,T,T,T,Bur,LbK,,JzH,Ad,FT,212,2,1,2,T,F,T,T,148,37,33.5,366,
+T,Ved9011,Vedrovice,Ved,sběr11,T,T,T,Bur,LbK,,JzH,Ad,FT,213,2,1,3,T,F,T,T2,183,30.5,27,279,
+T,Ved8808,Vedrovice,Ved,8/88,T,T,T,Bur,LbK,,JzH,We,FT,312,3,1,2,NA,F,NA,NA,74,17,11,NA,Za dvorem
+F,Ved2008,Vedrovice,Ved,Černý I,T,T,T,Bur,LbK,,Zel,Ax,FT,NA,NA,NA,NA,F,F,NA,NA,103,40,18,NA,
+T,Ved2102,Vedrovice,Ved,Černý II,T,T,T,Bur,LbK,,JzH,Ad,FT,211,2,1,1,F,F,F,T,133,43,26,NA,Malé ad?
+T,Ved2201,Vedrovice,Ved,Černý III,T,T,T,Bur,LbK,,JzH,Ad,FT,212,2,1,2,F,F,F,T,209,36,27,NA,
+T,Ved2401,Vedrovice,Ved,St. výzk.,T,T,T,Bur,LbK,,JzH,We,FT,322,3,2,2,F,F,F,T,88,18,16,NA,
+T,Ved2402,Vedrovice,Ved,St. výzk.,T,T,T,Bur,LbK,,JzH,We,FT,313,3,1,3,F,F,F,T,80,15,14,NA,
+T,Ved2403,Vedrovice,Ved,St. výzk.,T,T,T,Bur,LbK,,Zel,We,FT,313,3,1,3,F,F,F,T,59,17,11,NA,
+T,Ved2404,Vedrovice,Ved,St. výzk.,T,T,T,Bur,LbK,,Zel,We,FT,311,3,1,1,F,F,F,T,40,14,10,NA,
+T,Tro0037,Troubsko,Tro,11:1,T,T,T,Dep,StK/LgK,,Mtb,Ad,Bl,311,3,1,1,F,F,F,NA,264,28,45,652,47585a Nedohledáno -obr
+T,Tro0038,Troubsko,Tro,12:5,F,F,T,Dep,StK/LgK,,Mtb,Ad,Bl,311,3,1,1,F,F,F,NA,255,46,54,1057,"47585b Nedohledáno – obr, silně poškozen"
+T,Tro0039,Troubsko,Tro,47586,T,T,T,Dep,StK/LgK,,Mtb,Ad,Bl,311,3,1,1,F,F,F,T2,319,30,46,710,TROUBSKO I podle Salaš 1986 obr 11:2
+T,Tro0040,Troubsko,Tro,47587,T,T,T,Dep,StK/LgK,,Zel,Ad,Bl,311,3,1,1,T,F,F,T2,253,37,56,854,obr 12:1
+F,Tro0041,Troubsko,Tro,1934,F,F,F,Dep,StK/LgK,,Mram,NA,Pf,NA,NA,NA,NA,NA,T,F,NA,303,95,32,1750,Mramorová deska – preforma dvou KK
+F,Tro0042,Troubsko,Tro,12:4,F,F,F,Dep,StK/LgK,,Mtb,Ax,FT,NA,NA,NA,NA,NA,NA,NA,NA,96,39,8,9132,PA36/34
+F,Tro0043,Troubsko,Tro,12:3,F,F,F,Dep,StK/LgK,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,56,17,8,13,PA36/34
+T,Tro0044,Troubsko,Tro,393,T,T,T,Dep,StK/LgK,,Mtb?,Ad,Bl,311,3,1,1,F,F,F,T2,287,36,51,950,Pa36/35 obr 11:3
+F,Tro0045,Troubsko,Tro,13449,F,F,F,Dep,StK/LgK,,Mtb?,Ad,FT,211,2,1,1,F,F,F,T1,204,31,36,507,břit hlazen do vysokého lesku
+T,Tur0001,Mikulov – Na Turoldu,Tur,A/M 133,T,T,T,Set,Neo,,JzH,We,FT,NA,NA,NA,NA,T,NA,T,T,66.4,18,13,32.71,
+T,Tur0002,Mikulov – Na Turoldu,Tur,A/M 137,T,T,T,Set,Neo,,JzH,Ad,FT,310,3,1,0,F,T,T,F,87.6,19.5,24.7,152.28,
+T,Tur0003,Mikulov – Na Turoldu,Tur,A 8193,T,T,T,Set,Neo,,JzH,Ad,FT,313,3,1,3,T,F,F,T,116.9,26.4,34.5,191.06,
+T,Tur0004,Mikulov – Na Turoldu,Tur,A 8194,T,T,T,Set,Neo,,JzH,Ad,FT,211,2,1,1,T,F,T,T,98.6,24.5,25.7,119.32,
+T,Tur0005,Mikulov – Na Turoldu,Tur,A/M 129,T,T,T,Set,Neo,,JzH,Ad,FT,201,2,0,1,NA,F,T,T3,114,24,28,155.29,
+T,Tur0006,Mikulov – Na Turoldu,Tur,A 8190,T,T,T,Set,Neo,,JzH,Ad,FT,212,2,1,2,T,F,T,T,144,37,37,369.7,
+T,Tur0007,Mikulov – Na Turoldu,Tur,A/M 123,F,F,T,Set,Neo,,JzH,Ad,Wa,213,2,1,3,F,T,NA,F,79,36,28.5,142,
+T,Tur0008,Mikulov – Na Turoldu,Tur,A 8192,T,T,T,Set,Neo,,JzH,Ad,FT,212,2,1,2,T,F,T,T,136.2,29.5,34.6,266.76,
+F,Tur0009,Mikulov – Na Turoldu,Tur,A 728,F,F,F,Set,Neo,,Nefrit,Ax,FT,NA,NA,NA,NA,NA,NA,NA,NA,63,46,14.5,75.09,
+F,Tur0010,Mikulov – Na Turoldu,Tur,A 8196,F,F,F,Set,Neo,,Baz,Ax,FT,NA,NA,NA,NA,NA,NA,NA,NA,80,55,25.4,167,
+F,Tur0011,Mikulov – Na Turoldu,Tur,A 8191,F,F,F,Set,Neo,,JzH,Ax,FT,NA,NA,NA,NA,NA,NA,NA,NA,145.4,65.6,22.4,408,
+F,Tur0012,Mikulov – Na Turoldu,Tur,A 738,F,F,F,Set,Neo,,Zel,Ax,FT,NA,NA,NA,NA,NA,NA,NA,NA,119,42,18,146.15,
+F,Tur0013,Mikulov – Na Turoldu,Tur,A 725,F,F,F,Set,Neo,,Nefrit,Ax,FT,NA,NA,NA,NA,NA,NA,NA,NA,63,36,11,36.16,
+F,Tur0014,Mikulov – Na Turoldu,Tur,A 741,F,F,F,Set,Neo,,JzH,Ax,FT,NA,NA,NA,NA,NA,NA,NA,NA,103,47,15,107.97,
+F,Tur0015,Mikulov – Na Turoldu,Tur,A 744,F,F,F,Set,Neo,,JzH,Ax,FT,NA,NA,NA,NA,NA,NA,NA,NA,66,49,16,99.26,
+F,Tur0016,Mikulov – Na Turoldu,Tur,A 745,F,F,F,Set,Neo,,JzH,Ax,FT,NA,NA,NA,NA,NA,NA,NA,NA,98,47,15,116.95,
+F,Tur0017,Mikulov – Na Turoldu,Tur,A 746,F,F,F,Set,Neo,,JzH,Ax,FT,NA,NA,NA,NA,NA,NA,NA,NA,67,51,14,95.56,
+F,Tur0018,Mikulov – Na Turoldu,Tur,A 732,F,F,F,Set,Neo,,JzH,Ax,FT,NA,NA,NA,NA,NA,NA,NA,NA,75,47,13,94.5,
+F,Tur0019,Mikulov – Na Turoldu,Tur,A/M 141,F,F,F,Set,Neo,,Para,Ax,FT,NA,NA,NA,NA,NA,NA,NA,NA,123,49,21,227.7,
+F,Tur0020,Mikulov – Na Turoldu,Tur,A/M 583,F,F,F,Set,Neo,,Mram,Ax,FT,NA,NA,NA,NA,NA,NA,NA,NA,88,42,1,66.71,
+F,Tur0021,Mikulov – Na Turoldu,Tur,A 729,F,F,F,Set,Neo,,JzH,Ax,FT,NA,NA,NA,NA,NA,NA,NA,NA,108,65,22,277.8,
+F,Tur0022,Mikulov – Na Turoldu,Tur,A 726,F,F,F,Set,Neo,,JzH,Ax,FT,NA,NA,NA,NA,NA,NA,NA,NA,65,46,14,78.98,
+F,Tur0023,Mikulov – Na Turoldu,Tur,A 737,F,F,F,Set,Neo,,Porf,Ax,FT,NA,NA,NA,NA,NA,NA,NA,NA,84,39,13,72.58,
+F,Tur0024,Mikulov – Na Turoldu,Tur,A/M 584,F,F,F,Set,Neo,,Zel,SM,FT,NA,NA,NA,NA,NA,NA,NA,NA,128,44,37,369.8,
+F,Tur0025,Mikulov – Na Turoldu,Tur,A 8195,F,F,F,Set,Neo,,JzH,Bu,FT,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+F,Tur0026,Mikulov – Na Turoldu,Tur,A 743,F,F,F,Set,Neo,,Porf,Ax,Wa,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+F,Tur0027,Mikulov – Na Turoldu,Tur,A 742,F,F,F,Set,Neo,,Zel,Ad,Wa,NA,NA,NA,NA,NA,NA,NA,NA,88,19,1,23.65,
+F,Tur0028,Mikulov – Na Turoldu,Tur,A 740,F,F,F,Set,Neo,,JzH,Ax,Wa,NA,NA,NA,NA,NA,NA,NA,NA,59,31,12,41.47,
+F,Tur0029,Mikulov – Na Turoldu,Tur,A 739,F,F,F,Set,Neo,,JzH,Ax,Wa,NA,NA,NA,NA,NA,NA,NA,NA,61,5,13,68.12,
+T,Nit0000,Nitra,Nit,Schicht III,T,T,T,Bur,LbK,,Mtb?,Ad,FT,211,2,1,1,T,F,F,NA,NA,NA,NA,NA,Pavúk1972
+T,Nit0002,Nitra,Nit,Gr2,T,T,T,Bur,LbK,,Mtb?,Ad,FT,113,1,1,3,F,F,T,T,NA,NA,NA,NA,Pavúk1972
+T,Nit0008,Nitra,Nit,Gr8,T,T,T,Bur,LbK,,Mtb?,Ad,FT,112,1,1,2,T,F,T,T,NA,NA,NA,NA,Pavúk1972
+T,Nit0021,Nitra,Nit,Gr21,T,T,T,Bur,LbK,,Mtb?,Ad,FT,221,2,2,1,T,F,T,T,NA,NA,NA,NA,Pavúk1972
+T,Nit0025,Nitra,Nit,Gr25,T,T,T,Bur,LbK,,Mtb?,Ad,FT,112,1,1,2,T,F,T,T,NA,NA,NA,NA,Pavúk1972
+T,Nit0026,Nitra,Nit,Gr26,T,T,T,Bur,LbK,,Mtb?,Ad,FT,111,1,1,1,F,F,T,T,NA,NA,NA,NA,Pavúk1972
+T,Nit0034,Nitra,Nit,Gr34,T,T,T,Bur,LbK,,Mtb?,Ad,FT,222,2,2,2,T,F,T,T,NA,NA,NA,NA,Pavúk1972
+T,Nit0040,Nitra,Nit,Gr40,T,T,T,Bur,LbK,,Mtb?,Ad,FT,213,2,1,3,F,F,F,T,NA,NA,NA,NA,Pavúk1972
+T,Nit0058,Nitra,Nit,Gr58,T,T,T,Bur,LbK,,Mtb?,Ad,FT,111,1,1,1,F,F,F,T1,NA,NA,NA,NA,Pavúk1972
+T,Nit0076,Nitra,Nit,Gr76,T,T,T,Bur,LbK,,Mtb?,Ad,FT,212,2,1,2,T,F,F,T,NA,NA,NA,NA,Pavúk1972
+T,Kle0000,Kleinhadersdorf,Kle,Steuerfund1990,T,T,T,Bur,LbK,,Amf,Ad,FT,221,2,2,1,NA,F,F,T,72,36,23,123,"Neugebauer-Maresch, Lenneis2005"
+T,Kle0001,Kleinhadersdorf,Kle,G1a,T,T,T,Bur,LbK,,Amf,Ad,FT,112,1,1,2,NA,F,F,T,102,34,20,120,"Neugebauer-Maresch, Lenneis2005"
+T,Kle0003,Kleinhadersdorf,Kle,G3,T,T,T,Bur,LbK,,Fylit,Ax,FT,NA,NA,NA,NA,NA,F,NA,NA,97,56,14,162,"Neugebauer-Maresch, Lenneis2005"
+T,Kle0006,Kleinhadersdorf,Kle,V6,T,T,T,Bur,LbK,,Amf,Ad,FT,212,2,1,2,T,F,T,T1,128,32,24,197,"Neugebauer-Maresch, Lenneis2005"
+T,Kle0009,Kleinhadersdorf,Kle,G9,T,T,T,Bur,LbK,,Amf,Ad,FT,111,1,1,1,F,F,F,T,163,50,21,298,"Neugebauer-Maresch, Lenneis2005"
+T,Kle0016,Kleinhadersdorf,Kle,G16,T,T,T,Bur,LbK,,Amf,Ad,FT,312,3,1,2,F,F,F,T,135,28,31,222,"Neugebauer-Maresch, Lenneis2005"
+T,Kle0017,Kleinhadersdorf,Kle,V17,T,T,T,Bur,LbK,,Amf,Ad,FT,211,2,1,1,T,F,F,T,113,37,25,233,"Neugebauer-Maresch, Lenneis2005"
+T,Kle0022,Kleinhadersdorf,Kle,V22,T,T,T,Bur,LbK,,Amf,Ax,FT,NA,NA,NA,NA,F,F,T,T2,84,43,13,84,"Neugebauer-Maresch, Lenneis2005"
+T,Kle0037,Kleinhadersdorf,Kle,V37,T,T,T,Bur,LbK,,Amf,Ax,FT,NA,NA,NA,NA,NA,F,NA,NA,135,52,13,165,"Neugebauer-Maresch, Lenneis2005"
+T,Kle0040,Kleinhadersdorf,Kle,V40,T,T,T,Bur,LbK,,Amf,Ax,FT,NA,NA,NA,NA,F,F,T,T1,115,48,22,208,"Neugebauer-Maresch, Lenneis2005"
+T,Kle0044,Kleinhadersdorf,Kle,V44,T,T,T,Bur,LbK,,Amf,Ad,FT,211,2,1,1,NA,F,F,F,12,28,14,86,"Neugebauer-Maresch, Lenneis2005"
+T,Kle0057,Kleinhadersdorf,Kle,V57,T,T,T,Bur,LbK,,Amf,We,FT,NA,NA,NA,NA,NA,F,NA,F,46,19,7,10,"Neugebauer-Maresch, Lenneis2005"
+T,Kle0064,Kleinhadersdorf,Kle,V64,T,T,T,Bur,LbK,,Amf,Ax,FT,NA,NA,NA,NA,F,F,F,T,70,31,10,44,"Neugebauer-Maresch, Lenneis2005"
+T,Kle0067,Kleinhadersdorf,Kle,V67-2,T,T,T,Bur,LbK,,Amf,Ad,FT,211,2,1,1,T,F,F,T,116,39,26,229,"Neugebauer-Maresch, Lenneis2005"
+T,Kle0068,Kleinhadersdorf,Kle,V68,T,T,T,Bur,LbK,,Fylit,Ax,FT,NA,NA,NA,NA,NA,F,NA,T,65,37,9,41,"Neugebauer-Maresch, Lenneis2005"
+T,Kle0071,Kleinhadersdorf,Kle,V71,T,T,F,Bur,LbK,,Amf,Ax,FT,NA,NA,NA,NA,NA,F,NA,NA,108,50,16,142,"Neugebauer-Maresch, Lenneis2005"
+T,Kle0079,Kleinhadersdorf,Kle,V79,T,T,T,Bur,LbK,,Amf,Ad,FT,212,2,1,2,T,T,T,F,158,32,26,269,"Neugebauer-Maresch, Lenneis2005"
+T,Kle0081,Kleinhadersdorf,Kle,V81,T,T,T,Bur,LbK,,Amf,Ad,FT,111,1,1,1,F,F,T,T,126,43,25,266,"Neugebauer-Maresch, Lenneis2005"
+T,Kle0088,Kleinhadersdorf,Kle,V87-2,T,T,T,Bur,LbK,,Břidlice/rula,Ax,FT,NA,NA,NA,NA,NA,F,NA,F,94,45,13,97,"Neugebauer-Maresch, Lenneis2005"
+T,Kle0087,Kleinhadersdorf,Kle,V87,T,T,T,Bur,LbK,,Amf,We,FT,NA,NA,NA,NA,NA,F,F,T,117,29,26,198,"Neugebauer-Maresch, Lenneis2005"
+T,Kle0089,Kleinhadersdorf,Kle,V89,F,F,T,Bur,LbK,,Amf,Ad,FT,110,1,1,NA,NA,F,T,F,79,34,26,75,"Neugebauer-Maresch, Lenneis2005"
+T,Kle0090,Kleinhadersdorf,Kle,V90,T,T,T,Bur,LbK,,Amf,Ad,FT,213,2,1,3,NA,F,F,T,107,36,29,239,"Neugebauer-Maresch, Lenneis2005"
+T,Kle1991,Kleinhadersdorf,Kle,Steuerfund1991,T,T,T,Bur,LbK,,Amf,Ad,FT,212,2,1,2,NA,F,F,T,168,40,24,301,"Neugebauer-Maresch, Lenneis2005"
+T,Kle1992,Kleinhadersdorf,Kle,SteuerWed,T,T,T,Bur,LbK,,Amf,We,FT,NA,NA,NA,NA,NA,NA,NA,NA,72,36,23,123,"Neugebauer-Maresch, Lenneis2005"
+F,Dep0001,Bezměrov,Bez,0001,F,F,F,Dep,LbK,IIb,diabas,Ad,Bl,NA,NA,NA,NA,F,F,F,T3,246,40,61,NA,Salaš1986
+F,Dep0002,Bezměrov,Bez,0002,F,F,F,Dep,LbK,IIb,diabas,Ad,Bl,NA,NA,NA,NA,F,F,F,T3,205,41,56,NA,Salaš1986
+F,Dep0003,Bezměrov,Bez,0003,F,F,F,Dep,LbK,IIb,diabas,Ad,Bl,NA,NA,NA,NA,F,F,F,T3,223,45,42,NA,Salaš1986
+F,Dep0004,Bezměrov,Bez,0004,F,F,F,Dep,LbK,IIb,diabas,Ad,Bl,NA,NA,NA,NA,F,F,F,T3,220,37,49,NA,Salaš1986
+F,Dep0008,Bohušice,Boh,0008,F,F,F,Dep,LbK,IIa,Mtb,Ad,Bl,NA,NA,NA,NA,F,F,F,T3,130,24,15,80,Salaš1986
+F,Dep0009,Bohušice,Boh,0009,F,F,F,Dep,LbK,IIa,Amf,Ad,Bl,NA,NA,NA,NA,F,F,F,T3,125,56,43,380,Salaš1987
+T,Dep0010,Brno-Žebětín,Zeb,0010,T,T,T,Dep,LbK/LgK,,Mtb,Ad,FT,312,3,1,2,NA,F,NA,T1,221,39,52,860,Salaš1986
+F,Dep0011,Brno-Žebětín,Zeb,0011,F,F,F,Dep,LbK/LgK,,Mtb,Ax,FT,NA,NA,NA,NA,NA,F,NA,T1,292,56,18,515,Salaš1986
+T,Dep0012,Brno-Žebětín,Zeb,0012,T,T,T,Dep,LbK/LgK,,Mtb,Ad,FT,312,3,1,2,NA,F,NA,T1,332,26,37,605,Salaš1986
+T,Dep0019,Dolní Věstonice,Dol,0019,T,T,T,Dep,LbK,II,NA,Ad,FT,313,3,1,3,NA,F,NA,T1,235,28,30,310,Salaš1986
+T,Dep0020,Dolní Věstonice,Dol,0020,T,T,T,Dep,LbK,II,NA,Ad,FT,321,3,2,1,NA,F,NA,T1,187,23,28,190,Salaš1986
+F,Dep0029,Moravičany,Mor,0029,F,F,F,Dep,LbK,,NA,Ad,Bl,321,3,2,1,F,F,F,T2,390,51,58,2550,Salaš1986
+T,Dep0030,Moravičany,Mor,0030,T,T,T,Dep,LbK,,NA,Ad,Bl,321,3,2,1,F,F,F,T2,380,42,50,1500,Salaš1986
+T,Dep0031,Moravičany,Mor,0031,T,T,T,Dep,LbK,,NA,Ad,Bl,212,2,1,2,F,F,F,T2,320,44,38,1010,Salaš1986
+F,DepV001,Liteň,Lit,001,F,F,F,Dep,LbK,,JzH?,Ax,FT,NA,NA,NA,NA,NA,F,NA,T,166,40,23,NA,Vencl1981
+F,DepV002,Liteň,Lit,002,F,F,F,Dep,LbK,,JzH?,Ad,Wa,311,3,1,1,NA,F,NA,F,127,24,29,NA,Vencl1981
+F,DepV003,Liteň,Lit,003,F,F,F,Dep,LbK,,JzH?,Ad,Wa,311,3,1,1,NA,F,NA,T2,160,38,40,NA,Vencl1981
+T,DepV004,Kovanice,Kov,004,T,T,T,Dep,StK,,JzH?,Ad,Bl,312,3,1,2,F,F,F,T2,283,35,52,930,Vencl1981
+T,DepV005,Kovanice,Kov,005,T,T,T,Dep,StK,,JzH?,Ad,Bl,312,3,1,2,F,F,F,T2,277,32,43,730,Vencl1981
+T,DepV006,Kovanice,Kov,006,T,T,T,Dep,StK,,JzH?,Ad,Bl,311,3,1,1,F,F,F,T2,235,34,43,590,Vencl1981
+T,DepV007,Kovanice,Kov,007,T,T,T,Dep,StK,,JzH?,Ad,Bl,311,3,1,1,F,F,F,T1,226,23,35,390,Vencl1981
+T,DepV008,Kovanice,Kov,008,T,T,T,Dep,StK,,JzH?,Ax,Bl,NA,NA,NA,NA,F,F,F,T2,277,65,23,740,Vencl1981
+T,DepV009,Kovanice,Kov,009,T,T,T,Dep,StK,,JzH?,Ax,Bl,NA,NA,NA,NA,F,F,F,T2,262,69,24,730,Vencl1981
+T,DepV010,Kovanice,Kov,010,T,T,T,Dep,StK,,JzH?,Ax,Bl,NA,NA,NA,NA,F,F,F,T2,256,56,21,530,Vencl1981
+T,DepV011,Kovanice,Kov,011,T,T,T,Dep,StK,,JzH?,Ax,Bl,NA,NA,NA,NA,F,F,F,T2,242,66,22,590,Vencl1981
+F,DepV011b,Kovanice,Kov,011b,F,F,F,Dep,StK,,JzH?,Ax,Bl,NA,NA,NA,NA,F,F,F,T2,260,67,23,760,Vencl1981
+T,DepV012,Lovosice,Lov,012,T,T,T,Dep,StK,,JzH?,Ad,Bl,311,3,1,1,F,F,F,T1,283,43,43,990,Vencl1981
+T,DepV013,Lovosice,Lov,013,T,T,T,Dep,StK,,JzH?,Ad,Bl,212,2,1,2,F,F,F,T2,282,31,44,800,Vencl1981
+T,DepV014,Lovosice,Lov,014,F,F,T,Dep,StK,,JzH?,Ad,Wa,210,2,1,NA,F,T,F,F,159,44,45,540,Vencl1981
+T,DepV015,Poděbrady,Pod,015,T,T,T,Dep,Neo,,JzH?,We,FT,NA,3,1,1,T,F,F,T1,99,21,11,50,Vencl1981
+T,DepV016,Poděbrady,Pod,016,T,T,T,Dep,Neo,,JzH?,We,FT,NA,1,1,2,F,F,F,T,103,16,18,70,Vencl1981
+T,DepV017,Poděbrady,Pod,017,T,T,T,Dep,Neo,,JzH?,Ax,FT,NA,NA,NA,NA,F,F,T,T2,136,71,18,330,Vencl1981
+F,DepV018,Poděbrady,Pod,018,F,F,F,Dep,Neo,,JzH?,Ax,Bl,NA,NA,NA,NA,F,F,F,T3,217,70,26,510,Vencl1981
+F,DepV019,Poděbrady,Pod,019,F,F,F,Dep,Neo,,JzH?,Ax,Bl,NA,NA,NA,NA,F,F,F,T3,206,63,26,520,Vencl1981
+F,DepV020,Poděbrady,Pod,020,F,F,F,Dep,Neo,,JzH?,Ax,Bl,NA,NA,NA,NA,F,F,F,T3,172,53,17,270,Vencl1981
+T,DepV021,Štěnovice,Ste,021,T,T,T,Dep,StK,,JzH?,Ad,FT,311,3,1,1,F,F,F,T,151,28,31,NA,Vencl1981
+T,DepV022,Štěnovice,Ste,022,T,T,T,Dep,StK,,JzH?,Ax,FT,NA,NA,NA,NA,F,F,F,T,142,59,28,NA,Vencl1981
+T,DepV023,Vitiněves,Vit.I,023,T,T,T,Dep,StK,,JzH?,Ad,Bl,313,3,1,3,F,F,F,T2,289,38,44,940,Vencl1981
+T,DepV024,Vitiněves,Vit.I,024,T,T,T,Dep,StK,,JzH?,Ad,Bl,213,2,1,3,F,F,F,T2,247,33,38,510,Vencl1981
+T,DepV025,Vitiněves,Vit.I,025,T,T,T,Dep,StK,,JzH?,Ad,Bl,212,2,1,2,F,F,F,T2,271,36,36,620,Vencl1981
+T,DepV026,Vitiněves,Vit.II,026,T,T,T,Dep,StK,,JzH?,Ad,Bl,312,3,1,2,NA,F,NA,T1,277,35,42,880,Vencl1981
+T,DepV027,Vitiněves,Vit.II,027,T,T,T,Dep,StK,,JzH?,Ad,Bl,311,3,1,1,NA,F,NA,T1,276,36,41,740,Vencl1981
+T,DepV028,Vitiněves,Vit.II,028,T,T,T,Dep,StK,,JzH?,Ad,Bl,312,3,1,2,NA,F,NA,T1,273,32,47,830,Vencl1981
+T,DepV029,Vitiněves,Vit.II,029,T,T,T,Dep,StK,,JzH?,Ad,Bl,212,2,1,2,NA,F,NA,T1,272,36,35,680,Vencl1981
+T,DepV030,Vitiněves,Vit.II,030,T,T,T,Dep,StK,,JzH?,Ad,Bl,212,2,1,2,NA,F,NA,T2,269,29,43,640,Vencl1981
+T,DepV031,Vitiněves,Vit.II,031,T,T,T,Dep,StK,,JzH?,Ad,Bl,211,2,1,1,NA,F,NA,T1,261,31,41,700,Vencl1981
+T,DepV032,Vitiněves,Vit.II,032,T,T,T,Dep,StK,,JzH?,Ad,Bl,211,2,1,1,NA,F,NA,T1,256,37,49,880,Vencl1981
+T,DepV033,Vitiněves,Vit.II,033,T,T,T,Dep,StK,,JzH?,Ad,FT,313,3,1,3,NA,F,NA,T1,228,33,36,500,Vencl1981
+F,DepV034,Vitiněves,Vit.II,034,T,T,T,Dep,StK,,JzH?,Ax,Bl,NA,NA,NA,NA,NA,F,NA,T,241,60,28,630,Vencl1981
