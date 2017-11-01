@@ -95,6 +95,16 @@ facTop %<>%
 detach("package:tidyverse", unload = TRUE)
 detach("package:stringr", unload = TRUE)
 
+# t-test korelace stop
+StPrac <- secon$StPrac
+StUpev <- secon$StUpev
+St <- data.frame(StPrac, StUpev)
+StPracN <- as.numeric(St$StPrac)
+StUpevN <- as.numeric(St$StUpev)
+StN <- data.frame(StPracN, StUpevN)
+t.test(StN)
+rcorr(as.matrix(StN))
+
 # MORPHOMETRICS ================================================================
 # Outlines ---------------------------------------------------------------------
 outProf <- Out(inProf, fac = facProf)
