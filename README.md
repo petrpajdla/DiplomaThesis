@@ -7,15 +7,14 @@ the covariance of shape with other variables (like use-wear etc.).
 
 Full text at official Uni repository (add link)
 
-## DATA:
+### DATA
 
-Db.BASE.csv - csv file with basic database, data not manipulated
++ Db.BASE.csv - csv file with basic database, data not manipulated
++ Db.PRIME.csv - csv file with database used for most of the analysis, some data manipulation, some editing
 
-Db.PRIME.csv - csv file with database used for most of the analysis, some data manipulation, some editing
+### SCRIPTS
 
-## SCRIPTS
-
-Adzes.r - 
++ Adzes.r - 
 
 License: CC-BY-4.0
 https://creativecommons.org/licenses/by/4.0/
