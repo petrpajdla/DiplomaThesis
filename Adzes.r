@@ -1,5 +1,5 @@
 # ADZES
-# - Adzes only
+# - Main script to perform morphometric analysis on adzes (only)
 
 # LIBRARIES ====================================================================
 library(Momocs)
