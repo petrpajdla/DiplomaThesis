@@ -920,6 +920,39 @@ load("./Archive/Adzes/Dt.pcProf")
 load("./Archive/Adzes/Dt.pcSide")
 load("./Archive/Adzes/Dt.pcTop")
 
+# Tests of normal distribution
+# - Bartlett for Top ~StUpev, ~StPrac; pc1:pc2 
+bartlett.test(pcTop$x[, 1], pcTop$fac$StUpev) # rejected
+bartlett.test(pcTop$x[, 2], pcTop$fac$StUpev) # not
+
+bartlett.test(pcTop$x[, 1], pcTop$fac$StPrac) # not
+bartlett.test(pcTop$x[, 2], pcTop$fac$StPrac) # not
+
+# - Fligner-Killeen for Top ~StUpev, ~StPrac; pc1:pc2 
+fligner.test(pcTop$x[, 1], pcTop$fac$StUpev) # not
+fligner.test(pcTop$x[, 2], pcTop$fac$StUpev) # not
+
+fligner.test(pcTop$x[, 1], pcTop$fac$StPrac) # not
+fligner.test(pcTop$x[, 2], pcTop$fac$StPrac) # not
+
+# - Bartlett for Side ~StUpev, ~StPrac; pc1:pc2 
+bartlett.test(pcSide$x[, 1], pcSide$fac$StPrac) # not
+bartlett.test(pcSide$x[, 2], pcSide$fac$StPrac) # not
+
+bartlett.test(pcSide$x[, 1], pcSide$fac$StUpev) # rejected
+bartlett.test(pcSide$x[, 2], pcSide$fac$StUpev) # not
+
+# - Fligner-Killeen for Side ~StUpev, ~StPrac; pc1:pc2
+fligner.test(pcSide$x[, 1], pcSide$fac$StUpev) # not
+fligner.test(pcSide$x[, 2], pcSide$fac$StUpev) # not
+
+fligner.test(pcSide$x[, 1], pcSide$fac$StPrac) # not
+fligner.test(pcSide$x[, 2], pcSide$fac$StPrac) # not
+
+# Results: rejected for (not normal distribution, MANOVA thus not applicable):
+#    StUpev - pc1 - Top and 
+#    StUpev - pc1 - Side
+
 ?MANOVA
 MANOVA(pcProf, fac = "SalProfVys", retain = 0.99)
 MANOVA(pcProf, fac = "SalProfTvar", retain = 0.99)
@@ -931,9 +964,11 @@ MANOVA(pcSide, fac = "StUpev", retain = 0.99)
 MANOVA(pcTop, fac = "StPrac", retain = 0.99)
 MANOVA(pcTop, fac = "StUpev", retain = 0.99)
 
-# m <- manova(pcTop$x[, 1:5] ~ pcTop$fac$Orig * pcTop$fac$CultDat)
-# summary(m)
-# summary.aov(m)
+m <- manova(pcTop$x[, 1:5] ~ pcTop$fac$StPrac * pcTop$fac$StUpev)
+summary(m)
+summary.aov(m)
+
+
 
 MANOVA(pcTop, fac = "Orig", retain = 0.99)
 
