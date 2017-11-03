@@ -21,6 +21,7 @@ Folder Data contains input data, folder Scripts contains .r scripts and folder A
 + Adzes.r - script to perform morphometrics on adzes
 + IndSites.r - performing PCA and hierarchical clustering for individual sites
 + Mapa.r - script to create maps
++ Comp.r - comparison of two small datasets of shapes (created with diff. techniques: handdrawn (Orig) vs scanned (Lit))
 
 ### ARCHIVE
 
