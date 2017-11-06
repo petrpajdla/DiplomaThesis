@@ -495,6 +495,7 @@ dev.off()
 pal2 <- c("#e41a1c", "#33a02c")
 pal3 <- c("#377eb8", "#33a02c", "#e41a1c")
 palN <- c("#e41a1c", "gray50", "#33a02c")
+palN3 <- c("gray50", "#33a02c", "#e41a1c") ##377eb8
 palN2 <- c("#33a02c", "#e41a1c", "gray50")
 pal4 <- c("#377eb8", "#33a02c", "#e41a1c", "gray50")
 
@@ -508,13 +509,13 @@ pal4 <- c("#377eb8", "#33a02c", "#e41a1c", "gray50")
 # }
 
 # Stopy
-pdf(file = "./Adzes/pc3-Top_StUpev.pdf")
+pdf(file = "./Obr/pc3-Top_StUpev.pdf")
 plot3(
   pcTop,
   fac = "StUpev",
   size.shp = 1,
   amp.shp = 1,
-  col = palN,
+  col = palN3,
   pch = c(15, 4, 19),
   morphospace = T,
   pos.shp = "range_axes",
@@ -548,13 +549,13 @@ plot3(
 )
 dev.off()
 
-pdf(file = "./Adzes/pc3-Side_StUpev.pdf")
+pdf(file = "./Obr/pc3-Side_StUpev.pdf")
 plot3(
   pcSide,
   fac = "StUpev",
   size.shp = 1,
   amp.shp = 1,
-  col = palN,
+  col = palN3,
   pch = c(15, 4, 19),
   morphospace = T,
   pos.shp = "range_axes",
@@ -618,13 +619,12 @@ plot3(
 )
 dev.off()
 
-pdf(file = "./Adzes/pc3-Prof_SalProfTvar.pdf")
+pdf(file = "./Obr/pc3-Prof_SalProfTvar.pdf")
 plot3(
   pcProf,
   fac = "SalProfTvar",
   size.shp = 1,
   amp.shp = 1,
-  col = pal3,
   pch = c(15, 4, 19),
   morphospace = T,
   pos.shp = "range_axes",
@@ -638,13 +638,12 @@ plot3(
 )
 dev.off()
 
-pdf(file = "./Adzes/pc3-Side_SalTylBok.pdf")
+pdf(file = "./Obr/pc3-Side_SalTylBok.pdf")
 plot3(
   pcSide,
   fac = "SalTylBok",
   size.shp = 1,
   amp.shp = 1,
-  col = pal4,
   pch = c(15, 4, 19),
   morphospace = T,
   pos.shp = "range_axes",
