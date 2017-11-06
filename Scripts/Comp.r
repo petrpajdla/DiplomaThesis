@@ -75,6 +75,15 @@ Prof <- mshapes(efProf, 1)
 Side <- mshapes(efSide, 1)
 Top <- mshapes(efTop, 1)
 
+# t-test
+# lit <- filter(manProf, Puv == "Lit")
+# orig <- filter(manProf, Puv == "Orig")
+# 
+# t.test(Prof$shp$Lit, Prof$shp$Orig)
+# t.test(Prof$shp$Lit, Prof$shp$Orig, paired = T)
+# 
+# t.test(lit$coo$LitProf0, orig$coo$OrigProf0)
+
 # stack plots of meanshapes ----
 # pdf(file = "./Obr/prof.pdf")
 # LitProf <- Prof$shp$Lit    %T>% coo_plot(border="blue")
