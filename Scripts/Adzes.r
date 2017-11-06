@@ -948,6 +948,19 @@ fligner.test(pcSide$x[, 2], pcSide$fac$StUpev) # not
 fligner.test(pcSide$x[, 1], pcSide$fac$StPrac) # not
 fligner.test(pcSide$x[, 2], pcSide$fac$StPrac) # not
 
+# Shapiro--Wilk normality test
+shapiro.test(pcTop$x[, 3])
+shapiro.test(efTop$coe[, 4])
+
+shapiro.test(pcSide$x[, 3])
+
+hist(pcSide$x[, 3])
+boxplot(pcSide$x[, 3])
+
+qqnorm(pcSide$x[, 3])
+
+bartlett.test(efTop$coe[, 1], efTop$fac$StUpev) # rejected
+
 # Results: rejected for (not normal distribution, MANOVA thus not applicable):
 #    StUpev - pc1 - Top and 
 #    StUpev - pc1 - Side
@@ -963,7 +976,7 @@ MANOVA(pcSide, fac = "StUpev", retain = 0.99)
 MANOVA(pcTop, fac = "StPrac", retain = 0.99)
 MANOVA(pcTop, fac = "StUpev", retain = 0.99)
 
-m <- manova(pcTop$x[, 1:5] ~ pcTop$fac$StPrac * pcTop$fac$StUpev)
+m <- manova(pcTop$x[, 2:3] ~ pcTop$fac$StPrac * pcTop$fac$StUpev)
 summary(m)
 summary.aov(m)
 
