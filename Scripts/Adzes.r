@@ -914,12 +914,71 @@ pdf(file = "./Adzes/ldaTop_OpSeq.pdf")
 funLDA(efTop, "OpSeq", "Top")
 dev.off()
 
-# manova =======================================================================
+# MANOVA =======================================================================
 load("./Archive/Adzes/Dt.pcProf")
 load("./Archive/Adzes/Dt.pcSide")
 load("./Archive/Adzes/Dt.pcTop")
 
-# Tests of normal distribution
+# Normality tests --------------------------------------------------------------
+topStUpevT <- filter(pcTop, StUpev == "T")
+topStUpevF <- filter(pcTop, StUpev == "F")
+
+topStPracT <- filter(pcTop, StPrac == "T")
+topStPracF <- filter(pcTop, StPrac == "F")
+
+sideStUpevT <- filter(pcSide, StUpev == "T")
+sideStUpevF <- filter(pcSide, StUpev == "F")
+
+sideStPracT <- filter(pcSide, StPrac == "T")
+sideStPracF <- filter(pcSide, StPrac == "F")
+
+# Q-Q plot
+# qqnorm(topStUpevT$x[, 1])
+library(ggpubr)
+library(mvnormtest)
+ggqqplot(pcTop$x[, 1])
+ggqqplot(pcSide$x[, 1])
+ggqqplot(pcTop$x[, 1])
+
+ggqqplot(pcTop$x[, 2])
+ggqqplot(pcSide$x[, 2])
+ggqqplot(pcTop$x[, 2])
+
+# ggqqplot(topStUpevT$x[, 1])
+# ggqqplot(topStUpevF$x[, 1])
+# 
+# ggqqplot(topStPracT$x[, 1])
+# ggqqplot(topStPracF$x[, 1])
+# 
+# ggqqplot(sideStUpevT$x[, 1])
+# ggqqplot(sideStUpevF$x[, 1])
+# 
+# ggqqplot(sideStPracT$x[, 1])
+# ggqqplot(sideStPracF$x[, 1])
+
+# Shapiro--Wilk normality test
+shapiro.test(pcTop$x[, 1])
+shapiro.test(pcSide$x[, 1])
+
+shapiro.test(pcTop$x[, 2])
+shapiro.test(pcSide$x[, 2])
+
+# shapiro.test(topStUpevT$x)
+# shapiro.test(topStUpevF$x)
+# 
+# shapiro.test(topStPracT$x)
+# shapiro.test(topStPracF$x)
+# 
+# shapiro.test(sideStUpevT$x)
+# shapiro.test(sideStUpevF$x)
+# 
+# shapiro.test(topStPracT$x)
+# shapiro.test(topStPracF$x)
+
+# Q-Q plots -> somewhat normal distributions, but
+# shapiro--wilk's tests - non-normal distributions
+
+# Tests of homogeneity of variances
 # - Bartlett for Top ~StUpev, ~StPrac; pc1:pc2 
 bartlett.test(pcTop$x[, 1], pcTop$fac$StUpev) # rejected
 bartlett.test(pcTop$x[, 2], pcTop$fac$StUpev) # not
@@ -948,41 +1007,43 @@ fligner.test(pcSide$x[, 2], pcSide$fac$StUpev) # not
 fligner.test(pcSide$x[, 1], pcSide$fac$StPrac) # not
 fligner.test(pcSide$x[, 2], pcSide$fac$StPrac) # not
 
-# Shapiro--Wilk normality test
-shapiro.test(pcTop$x[, 3])
-shapiro.test(efTop$coe[, 4])
-
-shapiro.test(pcSide$x[, 3])
-
-hist(pcSide$x[, 3])
-boxplot(pcSide$x[, 3])
-
-qqnorm(pcSide$x[, 3])
-
 bartlett.test(efTop$coe[, 1], efTop$fac$StUpev) # rejected
 
-# Results: rejected for (not normal distribution, MANOVA thus not applicable):
-#    StUpev - pc1 - Top and 
-#    StUpev - pc1 - Side
+# Results: rejected for:
+# - StUpev - pc1 - Top and 
+# - StUpev - pc1 - Side
 
-?MANOVA
-MANOVA(pcProf, fac = "SalProfVys", retain = 0.99)
-MANOVA(pcProf, fac = "SalProfTvar", retain = 0.99)
-MANOVA(pcSide, fac = "SalTylBok", retain = 0.99)
+# MANOVA(pcProf, fac = "SalProfVys", retain = 0.99)
+# MANOVA(pcProf, fac = "SalProfTvar", retain = 0.99)
+# MANOVA(pcSide, fac = "SalTylBok", retain = 0.99)
+# 
+# MANOVA(pcSide, fac = "StPrac", retain = 0.99)
+# MANOVA(pcSide, fac = "StUpev", retain = 0.99)
+# 
+# MANOVA(pcTop, fac = "StPrac", retain = 0.99)
+# MANOVA(pcTop, fac = "StUpev", retain = 0.99)
 
-MANOVA(pcSide, fac = "StPrac", retain = 0.99)
-MANOVA(pcSide, fac = "StUpev", retain = 0.99)
+# m <- manova(pcTop$x[, 2:3] ~ pcTop$fac$StPrac) # * pcTop$fac$StUpev
+# summary(m)
+# summary.aov(m)
 
-MANOVA(pcTop, fac = "StPrac", retain = 0.99)
-MANOVA(pcTop, fac = "StUpev", retain = 0.99)
+# Kruskal--Wallis test
+# boxplot(sideStPracT$x[, 1], sideStPracF$x[, 1])
+kruskal.test(pcTop$x[, 1], pcTop$fac$StPrac)
+kruskal.test(pcSide$x[, 1], pcSide$fac$StPrac)
+# kruskal.test(pcTop$x[, 2], pcTop$fac$StPrac)
+# kruskal.test(pcSide$x[, 2], pcSide$fac$StPrac)
 
-m <- manova(pcTop$x[, 2:3] ~ pcTop$fac$StPrac * pcTop$fac$StUpev)
-summary(m)
-summary.aov(m)
+kruskal.test(pcTop$x[, 1], pcTop$fac$StUpev)
+kruskal.test(pcSide$x[, 1], pcSide$fac$StUpev)
+# kruskal.test(pcTop$x[, 2], pcTop$fac$StUpev)
+# kruskal.test(pcSide$x[, 2], pcSide$fac$StUpev)
 
-
-
-MANOVA(pcTop, fac = "Orig", retain = 0.99)
+kruskal.test(pcSide$x[, 1], pcSide$fac$SalTylBok)
+kruskal.test(pcProf$x[, 1], pcProf$fac$SalProfTvar)
+kruskal.test(pcProf$x[, 1], pcProf$fac$SalProfVys)
+kruskal.test(pcProf$x[, 2], pcProf$fac$SalProfTvar)
+kruskal.test(pcProf$x[, 2], pcProf$fac$SalProfVys)
 
 # END ==========================================================================
 graphics.off()
