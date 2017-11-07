@@ -936,24 +936,25 @@ sideStPracF <- filter(pcSide, StPrac == "F")
 # qqnorm(topStUpevT$x[, 1])
 library(ggpubr)
 library(mvnormtest)
-
 ggqqplot(pcTop$x[, 1])
 ggqqplot(pcSide$x[, 1])
+ggqqplot(pcTop$x[, 1])
 
 ggqqplot(pcTop$x[, 2])
 ggqqplot(pcSide$x[, 2])
+ggqqplot(pcTop$x[, 2])
 
-ggqqplot(topStUpevT$x[, 1])
-ggqqplot(topStUpevF$x[, 1])
-
-ggqqplot(topStPracT$x[, 1])
-ggqqplot(topStPracF$x[, 1])
-
-ggqqplot(sideStUpevT$x[, 1])
-ggqqplot(sideStUpevF$x[, 1])
-
-ggqqplot(sideStPracT$x[, 1])
-ggqqplot(sideStPracF$x[, 1])
+# ggqqplot(topStUpevT$x[, 1])
+# ggqqplot(topStUpevF$x[, 1])
+# 
+# ggqqplot(topStPracT$x[, 1])
+# ggqqplot(topStPracF$x[, 1])
+# 
+# ggqqplot(sideStUpevT$x[, 1])
+# ggqqplot(sideStUpevF$x[, 1])
+# 
+# ggqqplot(sideStPracT$x[, 1])
+# ggqqplot(sideStPracF$x[, 1])
 
 # Shapiro--Wilk normality test
 shapiro.test(pcTop$x[, 1])
@@ -962,19 +963,19 @@ shapiro.test(pcSide$x[, 1])
 shapiro.test(pcTop$x[, 2])
 shapiro.test(pcSide$x[, 2])
 
-mshapiro.test(topStUpevT$x)
-mshapiro.test(topStUpevF$x)
+# shapiro.test(topStUpevT$x)
+# shapiro.test(topStUpevF$x)
+# 
+# shapiro.test(topStPracT$x)
+# shapiro.test(topStPracF$x)
+# 
+# shapiro.test(sideStUpevT$x)
+# shapiro.test(sideStUpevF$x)
+# 
+# shapiro.test(topStPracT$x)
+# shapiro.test(topStPracF$x)
 
-mshapiro.test(topStPracT$x)
-mshapiro.test(topStPracF$x)
-
-mshapiro.test(sideStUpevT$x)
-mshapiro.test(sideStUpevF$x)
-
-mshapiro.test(topStPracT$x)
-mshapiro.test(topStPracF$x)
-
-# Q-Q plots -> normal distributions, but
+# Q-Q plots -> somewhat normal distributions, but
 # shapiro--wilk's tests - non-normal distributions
 
 # Tests of homogeneity of variances
@@ -1012,22 +1013,37 @@ bartlett.test(efTop$coe[, 1], efTop$fac$StUpev) # rejected
 # - StUpev - pc1 - Top and 
 # - StUpev - pc1 - Side
 
-?MANOVA
-MANOVA(pcProf, fac = "SalProfVys", retain = 0.99)
-MANOVA(pcProf, fac = "SalProfTvar", retain = 0.99)
-MANOVA(pcSide, fac = "SalTylBok", retain = 0.99)
+# MANOVA(pcProf, fac = "SalProfVys", retain = 0.99)
+# MANOVA(pcProf, fac = "SalProfTvar", retain = 0.99)
+# MANOVA(pcSide, fac = "SalTylBok", retain = 0.99)
+# 
+# MANOVA(pcSide, fac = "StPrac", retain = 0.99)
+# MANOVA(pcSide, fac = "StUpev", retain = 0.99)
+# 
+# MANOVA(pcTop, fac = "StPrac", retain = 0.99)
+# MANOVA(pcTop, fac = "StUpev", retain = 0.99)
 
-MANOVA(pcSide, fac = "StPrac", retain = 0.99)
-MANOVA(pcSide, fac = "StUpev", retain = 0.99)
+# m <- manova(pcTop$x[, 2:3] ~ pcTop$fac$StPrac) # * pcTop$fac$StUpev
+# summary(m)
+# summary.aov(m)
 
-MANOVA(pcTop, fac = "StPrac", retain = 0.99)
-MANOVA(pcTop, fac = "StUpev", retain = 0.99)
+# Kruskal--Wallis test
+# boxplot(sideStPracT$x[, 1], sideStPracF$x[, 1])
+kruskal.test(pcTop$x[, 1], pcTop$fac$StPrac)
+kruskal.test(pcSide$x[, 1], pcSide$fac$StPrac)
+# kruskal.test(pcTop$x[, 2], pcTop$fac$StPrac)
+# kruskal.test(pcSide$x[, 2], pcSide$fac$StPrac)
 
-m <- manova(pcTop$x[, 2:3] ~ pcTop$fac$StPrac * pcTop$fac$StUpev)
-summary(m)
-summary.aov(m)
+kruskal.test(pcTop$x[, 1], pcTop$fac$StUpev)
+kruskal.test(pcSide$x[, 1], pcSide$fac$StUpev)
+# kruskal.test(pcTop$x[, 2], pcTop$fac$StUpev)
+# kruskal.test(pcSide$x[, 2], pcSide$fac$StUpev)
 
-MANOVA(pcTop, fac = "Orig", retain = 0.99)
+kruskal.test(pcSide$x[, 1], pcSide$fac$SalTylBok)
+kruskal.test(pcProf$x[, 1], pcProf$fac$SalProfTvar)
+kruskal.test(pcProf$x[, 1], pcProf$fac$SalProfVys)
+kruskal.test(pcProf$x[, 2], pcProf$fac$SalProfTvar)
+kruskal.test(pcProf$x[, 2], pcProf$fac$SalProfVys)
 
 # END ==========================================================================
 graphics.off()
