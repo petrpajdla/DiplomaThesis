@@ -1045,6 +1045,16 @@ kruskal.test(pcProf$x[, 1], pcProf$fac$SalProfVys)
 kruskal.test(pcProf$x[, 2], pcProf$fac$SalProfTvar)
 kruskal.test(pcProf$x[, 2], pcProf$fac$SalProfVys)
 
+kruskal.test(pcSide$x[,1], pcSide$fac$CultDat)
+kruskal.test(pcTop$x[,1], pcTop$fac$CultDat)
+kruskal.test(pcProf$x[,1], pcProf$fac$CultDat)
+kruskal.test(pcProf$x[,2], pcProf$fac$CultDat)
+
+kruskal.test(pcSide$x[,1], pcSide$fac$Orig)
+kruskal.test(pcTop$x[,1], pcTop$fac$Orig)
+kruskal.test(pcProf$x[,1], pcProf$fac$Orig)
+kruskal.test(pcProf$x[,2], pcProf$fac$Orig)
+
 # END ==========================================================================
 graphics.off()
 rm(list = ls())
