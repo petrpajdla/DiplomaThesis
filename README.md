@@ -7,7 +7,7 @@ Focus of my diploma thesis is morphometric analysis of neolithic stone tools sha
 the covariance of shape with other variables (like use-wear etc.).
 
 Full text at official University repository:
-Release 1.0.0 of this repository doi:10.5281/zenodo.1044744 (link: )
+Release 1.0.0 of this repository at Zenodo: doi 10.5281/zenodo.1044744 (http://dx.doi.org/10.5281/zenodo.1044744)
 
 Folder Data contains input data, folder Scripts contains .r scripts and folder Archive contains backup data achieved through the analysis
 
