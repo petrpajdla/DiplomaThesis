@@ -105,6 +105,11 @@ StN <- data.frame(StPracN, StUpevN)
 t.test(StN)
 rcorr(as.matrix(StN))
 
+# korelace cultDat a profVys
+# CultDat <- as.numeric(factor(secon$CultDat))
+# ProfVys <- as.numeric(factor(secon$SalProfVys))
+# cor.test(CultDat, ProfVys)
+
 # MORPHOMETRICS ================================================================
 # Outlines ---------------------------------------------------------------------
 outProf <- Out(inProf, fac = facProf)
@@ -936,47 +941,44 @@ sideStPracF <- filter(pcSide, StPrac == "F")
 # qqnorm(topStUpevT$x[, 1])
 library(ggpubr)
 library(mvnormtest)
-ggqqplot(pcTop$x[, 1])
-ggqqplot(pcSide$x[, 1])
-ggqqplot(pcTop$x[, 1])
+# ggqqplot(pcTop$x[, 1])
+# ggqqplot(pcSide$x[, 1])
+# ggqqplot(pcTop$x[, 1])
+# 
+# ggqqplot(pcTop$x[, 2])
+# ggqqplot(pcSide$x[, 2])
+# ggqqplot(pcTop$x[, 2])
 
-ggqqplot(pcTop$x[, 2])
-ggqqplot(pcSide$x[, 2])
-ggqqplot(pcTop$x[, 2])
+ggqqplot(topStUpevT$x[, 1])
+ggqqplot(topStUpevF$x[, 1])
 
-# ggqqplot(topStUpevT$x[, 1])
-# ggqqplot(topStUpevF$x[, 1])
-# 
-# ggqqplot(topStPracT$x[, 1])
-# ggqqplot(topStPracF$x[, 1])
-# 
-# ggqqplot(sideStUpevT$x[, 1])
-# ggqqplot(sideStUpevF$x[, 1])
-# 
-# ggqqplot(sideStPracT$x[, 1])
-# ggqqplot(sideStPracF$x[, 1])
+ggqqplot(topStPracT$x[, 1])
+ggqqplot(topStPracF$x[, 1])
+
+ggqqplot(sideStUpevT$x[, 1])
+ggqqplot(sideStUpevF$x[, 1])
+
+ggqqplot(sideStPracT$x[, 1])
+ggqqplot(sideStPracF$x[, 1])
 
 # Shapiro--Wilk normality test
-shapiro.test(pcTop$x[, 1])
-shapiro.test(pcSide$x[, 1])
-
-shapiro.test(pcTop$x[, 2])
-shapiro.test(pcSide$x[, 2])
-
-# shapiro.test(topStUpevT$x)
-# shapiro.test(topStUpevF$x)
+# shapiro.test(pcTop$x[, 1])
+# shapiro.test(pcSide$x[, 1])
 # 
-# shapiro.test(topStPracT$x)
-# shapiro.test(topStPracF$x)
-# 
-# shapiro.test(sideStUpevT$x)
-# shapiro.test(sideStUpevF$x)
-# 
-# shapiro.test(topStPracT$x)
-# shapiro.test(topStPracF$x)
+# shapiro.test(pcTop$x[, 2])
+# shapiro.test(pcSide$x[, 2])
 
-# Q-Q plots -> somewhat normal distributions, but
-# shapiro--wilk's tests - non-normal distributions
+shapiro.test(topStUpevT$x)
+shapiro.test(topStUpevF$x)
+
+shapiro.test(topStPracT$x)
+shapiro.test(topStPracF$x)
+
+shapiro.test(sideStUpevT$x)
+shapiro.test(sideStUpevF$x)
+
+shapiro.test(topStPracT$x)
+shapiro.test(topStPracF$x)
 
 # Tests of homogeneity of variances
 # - Bartlett for Top ~StUpev, ~StPrac; pc1:pc2 
@@ -1009,21 +1011,38 @@ fligner.test(pcSide$x[, 2], pcSide$fac$StPrac) # not
 
 bartlett.test(efTop$coe[, 1], efTop$fac$StUpev) # rejected
 
-# Results: rejected for:
-# - StUpev - pc1 - Top and 
-# - StUpev - pc1 - Side
-
+# vlastní MANOVA
 # MANOVA(pcProf, fac = "SalProfVys", retain = 0.99)
 # MANOVA(pcProf, fac = "SalProfTvar", retain = 0.99)
 # MANOVA(pcSide, fac = "SalTylBok", retain = 0.99)
-# 
-# MANOVA(pcSide, fac = "StPrac", retain = 0.99)
-# MANOVA(pcSide, fac = "StUpev", retain = 0.99)
-# 
-# MANOVA(pcTop, fac = "StPrac", retain = 0.99)
-# MANOVA(pcTop, fac = "StUpev", retain = 0.99)
 
-# m <- manova(pcTop$x[, 2:3] ~ pcTop$fac$StPrac) # * pcTop$fac$StUpev
+MANOVA(pcSide, fac = "StPrac", retain = 0.99)
+MANOVA(pcSide, fac = "StUpev", retain = 0.99)
+
+MANOVA(pcTop, fac = "StPrac", retain = 0.99)
+MANOVA(pcTop, fac = "StUpev", retain = 0.99)
+
+m <- manova(cbind(pcTop$x[, 1], pcSide$x[, 1]) ~ pcTop$fac$StPrac) # * pcTop$fac$StUpev
+summary(m)
+summary.aov(m)
+
+m <- manova(cbind(pcTop$x[, 1], pcSide$x[, 1]) ~ pcTop$fac$StUpev)
+summary(m)
+summary.aov(m)
+
+m <- manova(cbind(pcTop$x[, 1], pcSide$x[, 1]) ~ pcTop$fac$CultDat)
+summary(m)
+summary.aov(m)
+
+m <- manova(cbind(pcTop$x[, 1], pcSide$x[, 1]) ~ pcTop$fac$Orig)
+summary(m)
+summary.aov(m)
+
+# m <- manova(cbind(pcProf$x[, 1:2], pcProf$x[, 1:2]) ~ pcProf$fac$SalProfVys) # * pcTop$fac$StUpev
+# summary(m)
+# summary.aov(m)
+# 
+# m <- manova(pcSide$x[, 1:2] ~ pcSide$fac$SalTylBok) # * pcTop$fac$StUpev
 # summary(m)
 # summary.aov(m)
 
