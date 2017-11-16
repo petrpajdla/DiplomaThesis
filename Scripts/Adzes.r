@@ -721,6 +721,57 @@ plot3(
 )
 dev.off()
 
+
+plot(
+  pcProf,
+  fac = "CultDat",
+  size.shp = 0.5,
+  amp.shp = 0.8,
+  pch = 4,
+  morphospace = T,
+  pos.shp = "range_axes",
+  chull = T,
+  chull.filled = T,
+  chull.lty = 0,
+  ellipses = F,
+  labelsgroups = TRUE,
+  abbreviate.labelsgroups = F
+)
+
+
+plot(
+  pcSide,
+  fac = "CultDat",
+  size.shp = 0.5,
+  amp.shp = 0.8,
+  pch = 4,
+  morphospace = T,
+  pos.shp = "range_axes",
+  chull = T,
+  chull.filled = T,
+  chull.lty = 0,
+  ellipses = F,
+  labelsgroups = TRUE,
+)
+
+
+
+plot(
+  pcTop,
+  fac = "CultDat",
+  size.shp = 0.5,
+  amp.shp = 0.8,
+  pch = 4,
+  morphospace = T,
+  pos.shp = "range_axes",
+  chull = T,
+  chull.filled = T,
+  chull.lty = 0,
+  ellipses = F,
+  labelsgroups = TRUE,
+)
+
+
 # Clustering ===================================================================
 # Count number of clusters K and perform kmeans clustering
 # - elbow method (wss - within-clusters sum of squares)
@@ -1022,6 +1073,13 @@ MANOVA(pcSide, fac = "StUpev", retain = 0.99)
 MANOVA(pcTop, fac = "StPrac", retain = 0.99)
 MANOVA(pcTop, fac = "StUpev", retain = 0.99)
 
+MANOVA(pcTop, fac = "Orig", retain = 0.99)
+MANOVA(pcTop, fac = "CultDat", retain = 0.99)
+MANOVA(pcSide, fac = "Orig", retain = 0.99)
+MANOVA(pcSide, fac = "CultDat", retain = 0.99)
+MANOVA(pcProf, fac = "Orig", retain = 0.99)
+MANOVA(pcProf, fac = "CultDat", retain = 0.99)
+
 m <- manova(cbind(pcTop$x[, 1], pcSide$x[, 1]) ~ pcTop$fac$StPrac) # * pcTop$fac$StUpev
 summary(m)
 summary.aov(m)
@@ -1031,6 +1089,10 @@ summary(m)
 summary.aov(m)
 
 m <- manova(cbind(pcTop$x[, 1], pcSide$x[, 1]) ~ pcTop$fac$CultDat)
+summary(m)
+summary.aov(m)
+
+m <- manova(cbind(pcTop$x[, 1], pcSide$x[, 1]) ~ pcTop$fac$Orig)
 summary(m)
 summary.aov(m)
 

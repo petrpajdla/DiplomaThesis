@@ -86,6 +86,14 @@ perc.OpSeq <- Adzes %>%
 #   coord_flip()
 # dev.off() 
 
+perc.Half <- Adzes %>% 
+  group_by(Orig, Half) %>% 
+  summarise(count = n()) %>% 
+  mutate(perc=count/sum(count))
+
+# ggplot(data = perc.Half, aes(x = Orig, y = count, fill = Half)) +
+#     geom_bar(stat="identity", width = 0.5)
+
 pdf(file = "../../Text/Obr/Dat_OpSeq.pdf", width = 10, height = 3)
 grid.arrange(
 ggplot() +
