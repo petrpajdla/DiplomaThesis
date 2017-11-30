@@ -9,13 +9,14 @@ the covariance of shape with other variables (like use-wear etc.)
 Full text at official University repository: http://is.muni.cz/th/383410/ff_m/
 Release 1.0.0 of this repository at Zenodo: doi 10.5281/zenodo.1044744 (http://dx.doi.org/10.5281/zenodo.1044744)
 
-Folder Data contains input data, folder Scripts contains .r scripts and folder Archive contains morphometric data.
+Folder Data contains input data, folder Scripts contains .r scripts and folder Morpho contains morphometric data on adzes.
 
 ### DATA
 
 + Db.BASE.csv - csv file with basic database, data not manipulated
 + Db.PRIME.csv - csv file with database used for most of the analysis, some data manipulation, some editing
 + Db.Lok.csv - csv of individual sites
++ Db.Str.csv - structure of the database
 
 ### SCRIPTS
 
@@ -27,9 +28,8 @@ Folder Data contains input data, folder Scripts contains .r scripts and folder A
 + DiscreteVariables.r - analysis of discrete variables
 + ContinuousVariables.r - analysis of continuous variables (metric values)
 
-### ARCHIVE
+### MORPHO
 
-sub Adzes -- contains data for adzes
  + Dt.out files - outlines of shape
  + Dt.ef files - efourier coefficients
  + Dt.pc files - files containing pca coefficients
