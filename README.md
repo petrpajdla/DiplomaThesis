@@ -30,7 +30,6 @@ Folder Data contains input data, folder Scripts contains .r scripts and folder A
 ### ARCHIVE
 
 sub Adzes -- contains data for adzes
- + Dt.in files - files containig shape on import
  + Dt.out files - outlines of shape
  + Dt.ef files - efourier coefficients
  + Dt.pc files - files containing pca coefficients
