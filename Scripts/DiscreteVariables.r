@@ -1,3 +1,4 @@
+# Discrete vars
 # - Basic plots of discrete variables
 
 # LIBRARIES =======================

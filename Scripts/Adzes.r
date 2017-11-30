@@ -868,13 +868,16 @@ pdf(file = "./Adzes/kmeansProf.pdf")
 KMEANS(pcProf, 3)
 dev.off()
 
-pdf(file = "./Adzes/kmeansSide.pdf")
-KMEANS(pcSide, 3)
+pdf(file = "./Obr/kmeansSide.pdf")
+KMEANS(pcSide, 2)
 dev.off()
 
-pdf(file = "./Adzes/kmeansTop.pdf")
-KMEANS(pcTop, 3)
+pdf(file = "./Obr/kmeansTop.pdf")
+KMEANS(pcTop, 2)
 dev.off()
+
+# VedTop <- filter(pcTop, pcTop$fac$Lok == "Ved")
+# KMEANS(VedTop, 2)
 
 # Hierarchical clustering ------------------------------------------------------
 # CLUST(
@@ -1063,9 +1066,9 @@ fligner.test(pcSide$x[, 2], pcSide$fac$StPrac) # not
 bartlett.test(efTop$coe[, 1], efTop$fac$StUpev) # rejected
 
 # vlastní MANOVA
-# MANOVA(pcProf, fac = "SalProfVys", retain = 0.99)
-# MANOVA(pcProf, fac = "SalProfTvar", retain = 0.99)
-# MANOVA(pcSide, fac = "SalTylBok", retain = 0.99)
+MANOVA(pcProf, fac = "SalProfVys", retain = 0.99)
+MANOVA(pcProf, fac = "SalProfTvar", retain = 0.99)
+MANOVA(pcSide, fac = "SalTylBok", retain = 0.99)
 
 MANOVA(pcSide, fac = "StPrac", retain = 0.99)
 MANOVA(pcSide, fac = "StUpev", retain = 0.99)
@@ -1079,6 +1082,10 @@ MANOVA(pcSide, fac = "Orig", retain = 0.99)
 MANOVA(pcSide, fac = "CultDat", retain = 0.99)
 MANOVA(pcProf, fac = "Orig", retain = 0.99)
 MANOVA(pcProf, fac = "CultDat", retain = 0.99)
+
+MANOVA(pcTop, fac = "OpSeq")
+MANOVA(pcSide, fac = "OpSeq")
+MANOVA(pcProf, fac = "OpSeq")
 
 m <- manova(cbind(pcTop$x[, 1], pcSide$x[, 1]) ~ pcTop$fac$StPrac) # * pcTop$fac$StUpev
 summary(m)
@@ -1097,6 +1104,10 @@ summary(m)
 summary.aov(m)
 
 m <- manova(cbind(pcTop$x[, 1], pcSide$x[, 1]) ~ pcTop$fac$Orig)
+summary(m)
+summary.aov(m)
+
+m <- manova(cbind(pcTop$x[, 1], pcSide$x[, 1]) ~ pcTop$fac$OpSeq)
 summary(m)
 summary.aov(m)
 
