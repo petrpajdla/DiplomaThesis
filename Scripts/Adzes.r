@@ -721,6 +721,57 @@ plot3(
 )
 dev.off()
 
+
+plot(
+  pcProf,
+  fac = "CultDat",
+  size.shp = 0.5,
+  amp.shp = 0.8,
+  pch = 4,
+  morphospace = T,
+  pos.shp = "range_axes",
+  chull = T,
+  chull.filled = T,
+  chull.lty = 0,
+  ellipses = F,
+  labelsgroups = TRUE,
+  abbreviate.labelsgroups = F
+)
+
+
+plot(
+  pcSide,
+  fac = "CultDat",
+  size.shp = 0.5,
+  amp.shp = 0.8,
+  pch = 4,
+  morphospace = T,
+  pos.shp = "range_axes",
+  chull = T,
+  chull.filled = T,
+  chull.lty = 0,
+  ellipses = F,
+  labelsgroups = TRUE,
+)
+
+
+
+plot(
+  pcTop,
+  fac = "CultDat",
+  size.shp = 0.5,
+  amp.shp = 0.8,
+  pch = 4,
+  morphospace = T,
+  pos.shp = "range_axes",
+  chull = T,
+  chull.filled = T,
+  chull.lty = 0,
+  ellipses = F,
+  labelsgroups = TRUE,
+)
+
+
 # Clustering ===================================================================
 # Count number of clusters K and perform kmeans clustering
 # - elbow method (wss - within-clusters sum of squares)
@@ -817,13 +868,16 @@ pdf(file = "./Adzes/kmeansProf.pdf")
 KMEANS(pcProf, 3)
 dev.off()
 
-pdf(file = "./Adzes/kmeansSide.pdf")
-KMEANS(pcSide, 3)
+pdf(file = "./Obr/kmeansSide.pdf")
+KMEANS(pcSide, 2)
 dev.off()
 
-pdf(file = "./Adzes/kmeansTop.pdf")
-KMEANS(pcTop, 3)
+pdf(file = "./Obr/kmeansTop.pdf")
+KMEANS(pcTop, 2)
 dev.off()
+
+# VedTop <- filter(pcTop, pcTop$fac$Lok == "Ved")
+# KMEANS(VedTop, 2)
 
 # Hierarchical clustering ------------------------------------------------------
 # CLUST(
@@ -1012,15 +1066,26 @@ fligner.test(pcSide$x[, 2], pcSide$fac$StPrac) # not
 bartlett.test(efTop$coe[, 1], efTop$fac$StUpev) # rejected
 
 # vlastní MANOVA
-# MANOVA(pcProf, fac = "SalProfVys", retain = 0.99)
-# MANOVA(pcProf, fac = "SalProfTvar", retain = 0.99)
-# MANOVA(pcSide, fac = "SalTylBok", retain = 0.99)
+MANOVA(pcProf, fac = "SalProfVys", retain = 0.99)
+MANOVA(pcProf, fac = "SalProfTvar", retain = 0.99)
+MANOVA(pcSide, fac = "SalTylBok", retain = 0.99)
 
 MANOVA(pcSide, fac = "StPrac", retain = 0.99)
 MANOVA(pcSide, fac = "StUpev", retain = 0.99)
 
 MANOVA(pcTop, fac = "StPrac", retain = 0.99)
 MANOVA(pcTop, fac = "StUpev", retain = 0.99)
+
+MANOVA(pcTop, fac = "Orig", retain = 0.99)
+MANOVA(pcTop, fac = "CultDat", retain = 0.99)
+MANOVA(pcSide, fac = "Orig", retain = 0.99)
+MANOVA(pcSide, fac = "CultDat", retain = 0.99)
+MANOVA(pcProf, fac = "Orig", retain = 0.99)
+MANOVA(pcProf, fac = "CultDat", retain = 0.99)
+
+MANOVA(pcTop, fac = "OpSeq")
+MANOVA(pcSide, fac = "OpSeq")
+MANOVA(pcProf, fac = "OpSeq")
 
 m <- manova(cbind(pcTop$x[, 1], pcSide$x[, 1]) ~ pcTop$fac$StPrac) # * pcTop$fac$StUpev
 summary(m)
@@ -1035,6 +1100,14 @@ summary(m)
 summary.aov(m)
 
 m <- manova(cbind(pcTop$x[, 1], pcSide$x[, 1]) ~ pcTop$fac$Orig)
+summary(m)
+summary.aov(m)
+
+m <- manova(cbind(pcTop$x[, 1], pcSide$x[, 1]) ~ pcTop$fac$Orig)
+summary(m)
+summary.aov(m)
+
+m <- manova(cbind(pcTop$x[, 1], pcSide$x[, 1]) ~ pcTop$fac$OpSeq)
 summary(m)
 summary.aov(m)
 

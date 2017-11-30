@@ -1,4 +1,5 @@
- #  - Basic data analysis and plots of continuous numerical values
+# Cont. vars
+# - Basic data analysis and plots of continuous numerical values
 
 # # LIBRARIES ---------------------------
 library(tidyverse)
@@ -391,6 +392,12 @@ ViolAdL <- metAd %>%
   geom_jitter(position = position_jitter(width = 0.04), pch = 21, col = "gray30", bg = "gray90") +
   theme(legend.position = "none") +
   ylab("Len (mm)") + 
+  xlab("Lokalita")
+
+metAd %>% 
+  ggplot(aes(x = Gro, y = Wid)) +
+  geom_violin(alpha = 0.8, color = "gray30") + 
+  geom_jitter(aes(fill = metAd$OpSeq), position = position_jitter(width = 0.04), pch = 21) +
   xlab("Lokalita")
 
 ViolAdW <- metAd %>% 
