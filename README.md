@@ -1,12 +1,12 @@
 # DiplomaThesis
-Diploma Thesis (2017) in Archaeology at Masaryk University Brno, CZ.
+Diploma Thesis (2017) in Archaeology at Masaryk University Brno, CZ.  
 Topic: Early Neolithic polished stone tools analysis
 
-The repository contains DATA and R SCRIPTS used in the diploma thesis.
+The repository contains DATA and R SCRIPTS used in the diploma thesis.  
 Focus of my diploma thesis is morphometric analysis of neolithic stone tools shapes and 
 the covariance of shape with other variables (like use-wear etc.)
 
-Full text at official University repository: http://is.muni.cz/th/383410/ff_m/
+Full text at official University repository: http://is.muni.cz/th/383410/ff_m/  
 Release 1.0.0 of this repository at Zenodo: doi 10.5281/zenodo.1044744 (http://dx.doi.org/10.5281/zenodo.1044744)
 
 Folder Data contains input data, folder Scripts contains .r scripts and folder Morpho contains morphometric data on adzes.
